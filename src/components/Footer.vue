@@ -1,19 +1,38 @@
 <template>
-  <div class="backgroundBlue">
+  <div class="backImage">
+    <div class="backgroundBlue">
+        <FooterTop />
+    </div>
     <div class="container">
-      <FooterTop />
+      <div class="colonne">
+        <div>
+          <ColonnaSinistra />
+        </div>
+        <div>
+          <ColonnaCentrale />
+        </div>
+        <div>
+          <ColonnaDestra />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import FooterTop from './FooterSection/FooterTop.vue'
+import ColonnaSinistra from './ColonneFooterCentrale/ColonnaSinistra.vue'
+import ColonnaCentrale from './ColonneFooterCentrale/ColonnaCentrale.vue'
+import ColonnaDestra from './ColonneFooterCentrale/ColonnaDestra.vue'
 
 
 export default {
   name: 'Footer',
   components: {
     FooterTop,
+    ColonnaSinistra,
+    ColonnaCentrale,
+    ColonnaDestra,
   }
 }
 </script>
@@ -22,14 +41,23 @@ export default {
 <style scoped lang="scss">
 @import '../assets/global.scss';
 
-.container{
-  display: flex;
-  justify-content: center;
+.backImage{
+  background-image: url("../assets/img/footer-bg.jpg");
 }
 
 .backgroundBlue{
   background-color: blue;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.colonne{
+  display: flex;
+  padding: 20px;
+    div{
+      margin-right: 20px;
+    }
 }
 
 </style>
