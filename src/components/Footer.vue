@@ -16,6 +16,19 @@
         </div>
       </div>
     </div>
+    <div class="lastFooter">
+      <div class="container containerFooter">
+        <div>
+          <div class="sign">SIGN-UP NOW!</div>
+        </div>
+        <div class="dFlexIcons">
+          <h3>FOLLOW US</h3>
+          <div v-for="(elements, index) in icons" :key="index" class="pIcons">
+            <img :src="elements.icone">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -28,6 +41,28 @@ import ColonnaDestra from './ColonneFooterCentrale/ColonnaDestra.vue'
 
 export default {
   name: 'Footer',
+  data() {
+    return{
+      icons: [
+        {
+          icone: "../assets/img/footer-facebook.png"
+        },
+        {
+          icone: "../assets/img/footer-periscope.png"
+        },
+        {
+          icone: "../assets/img/footer-pinterest.png"
+        },
+        {
+          icone: "../assets/img/footer-twitter.png"
+        },
+        {
+          icone: "../assets/img/footer-youtube.png"
+        },
+      ]
+    }
+
+  },
   components: {
     FooterTop,
     ColonnaSinistra,
@@ -58,6 +93,35 @@ export default {
     div{
       margin-right: 20px;
     }
+}
+
+.lastFooter{
+  background-color: black;
+}
+
+.sign{
+  border: 1px blue solid;
+  color: white;
+  padding: 10px;
+}
+
+.containerFooter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+h3{
+  color: blue;
+}
+
+.dFlexIcons{
+  display: flex;
+}
+
+.pIcons{
+  margin-left: 10px;
 }
 
 </style>
