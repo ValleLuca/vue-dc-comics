@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'Nav',
   data() {
     return{
       menu: [
@@ -77,6 +77,7 @@ export default {
 <style scoped lang="scss">
 
 @import '../assets/style/partials/variables.scss';
+
 ul {
   display: flex;
   list-style-type: none;
@@ -88,7 +89,7 @@ ul {
      a{
        text-decoration: none;
        color: black;
-       padding: 20px;
+       padding: 50px 20px;
        &:hover{
          color: $colorePrimario;
          border-bottom: 4px solid $colorePrimario;

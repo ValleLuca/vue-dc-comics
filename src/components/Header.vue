@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="forpadding">
     <div class="container">
       <img src="../assets/img/dc-logo.png" alt="">
       <Nav />
@@ -27,6 +27,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.forpadding{
+  padding: 10px;
 }
 
 </style>
