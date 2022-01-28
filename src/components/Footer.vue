@@ -16,7 +16,6 @@
               <ColonnaDestra />
             </div>
         </div>
-          <img class="setImgBgDc" src="../assets/img/dc-logo-bg.png">
       </div>
     </div>
     <div class="lastFooter">
@@ -97,10 +96,6 @@ export default {
     div{
       margin-right: 20px;
     }
-}
-
-.setImgBgDc{
-  height: 10%;
 }
 
 .lastFooter{
