@@ -45,19 +45,19 @@ export default {
     return{
       icons: [
         {
-          icone: "../assets/img/footer-facebook.png"
+          icone: require("../assets/img/footer-facebook.png")
         },
         {
-          icone: "../assets/img/footer-periscope.png"
+          icone: require("../assets/img/footer-periscope.png")
         },
         {
-          icone: "../assets/img/footer-pinterest.png"
+          icone: require("../assets/img/footer-pinterest.png")
         },
         {
-          icone: "../assets/img/footer-twitter.png"
+          icone: require("../assets/img/footer-twitter.png")
         },
         {
-          icone: "../assets/img/footer-youtube.png"
+          icone: require("../assets/img/footer-youtube.png")
         },
       ]
     }
