@@ -1,7 +1,7 @@
 <template>
   <div class="boxDC">
     <div v-for="(elements, index) in box" :key="index" class="paddingBox">
-      <img :src="elements.image">
+      <img class="imgOption" :src="elements.image">
       <span>{{ elements.text }}</span>
     </div>
   </div>
@@ -49,6 +49,13 @@ export default {
 
 .paddingBox{
   padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.imgOption{
+  height: 40px;
+  margin-right: 10px
 }
 
 </style>
