@@ -1,11 +1,22 @@
 <template>
-  <div class="backgound">
-    <div class="container">
-      <div class="spanPadding">
-        <comixbox v-for="(elements, index) in dataBox" :key="index" :dati="elements" />
-      </div>
+  <div >
+    <div class="jumbotron"></div>
+    
+    <div class="bBlack">
+        <div class="container">
+          <div class="currentSeries">
+            <h3>CURRENT SERIES</h3>
+          </div>
+          <div class="pMain">
+              <comixbox v-for="(elements, index) in dataBox" :key="index" :dati="elements" />
+          </div>
+          <div class="containerBotton">
+            <button class="cBotton">LOAD MORE</button>
+          </div>
+        </div>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -102,19 +113,53 @@ export default {
 
 @import '../assets/global.scss';
 
-.backgound{
-  background-color: black;
+.jumbotron{
+  background-image: url('../assets/img/jumbotron.jpg');
+  height: 425px;
 }
 
 span{
   color: white;
 }
 
-.spanPadding{
+.pMain{
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.bBlack{
+  background-color: black;
+}
+
+.containerBotton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 20px 0;
+}
+
+.cBotton {
+  padding: 10px 50px;
+  background-color: blue;
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.currentSeries{
+  position: absolute;
+  background-color: blue;
+  width: 200px;
+  height: auto;  
+  text-align: center;
+  margin-top: -20px;
+    h3{
+      color: white;
+      padding: 10px;
+    }
 }
 
 </style>

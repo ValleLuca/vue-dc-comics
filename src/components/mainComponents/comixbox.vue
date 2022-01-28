@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="dBox" >
         <div class="margine">
             <img :src="dati.thumb">
             <h4>{{ dati.series }}</h4>
@@ -19,13 +19,18 @@ export default {
 
 <style scoped lang="scss">
 
-.margine{
-  margin-right: 20px;
-  
-    h4{
-      color: white;
-      width: 100%;
+.dBox{
+    width: 16%;
+    padding: 20px;
+    .margine{
+    margin-right: 20px;
+    
+        h4{
+        color: white;
+        width: 100%;
+        }
     }
 }
+
 
 </style>

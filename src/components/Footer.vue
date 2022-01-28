@@ -4,16 +4,19 @@
         <FooterTop />
     </div>
     <div class="container">
-      <div class="colonne">
-        <div>
-          <ColonnaSinistra />
+      <div class="footCol">
+        <div class="colonne">
+            <div>
+              <ColonnaSinistra />
+            </div>
+            <div>
+              <ColonnaCentrale />
+            </div>
+            <div>
+              <ColonnaDestra />
+            </div>
         </div>
-        <div>
-          <ColonnaCentrale />
-        </div>
-        <div>
-          <ColonnaDestra />
-        </div>
+          <img class="setImgBgDc" src="../assets/img/dc-logo-bg.png">
       </div>
     </div>
     <div class="lastFooter">
@@ -89,10 +92,15 @@ export default {
 
 .colonne{
   display: flex;
+  justify-content: space-between;
   padding: 20px;
     div{
       margin-right: 20px;
     }
+}
+
+.setImgBgDc{
+  height: 10%;
 }
 
 .lastFooter{
@@ -110,6 +118,11 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 30px;
+}
+
+.footCol{
+  display: flex;
+  justify-content: space-between;
 }
 
 h3{
